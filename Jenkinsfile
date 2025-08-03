@@ -114,7 +114,7 @@ pipeline {
                         imageTag: env.DOCKER_IMAGE_TAG,
                         manifestsPath: 'kubernetes',
                         gitCredentials: 'github-credentials',
-                        gitUserName: 'Jenkins CI',
+                        gitUserName: 'adityar947',
                         gitUserEmail: 'adityar947@gmail.com'
                     )
                 }
