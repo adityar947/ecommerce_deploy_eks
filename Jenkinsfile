@@ -5,11 +5,11 @@ pipeline {
     
     environment {
         // Update the main app image name to match the deployment file
-        DOCKER_IMAGE_NAME = 'repo/easyshop-app'
-        DOCKER_MIGRATION_IMAGE_NAME = 'repo/easyshop-migration'
+        DOCKER_IMAGE_NAME = 'adityar947/easyshop-app'
+        DOCKER_MIGRATION_IMAGE_NAME = 'adityar947/easyshop-migration'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
         GITHUB_CREDENTIALS = credentials('github-credentials')
-        GIT_BRANCH = "master"
+        GIT_BRANCH = "main"
     }
     
     stages {
@@ -115,7 +115,7 @@ pipeline {
                         manifestsPath: 'kubernetes',
                         gitCredentials: 'github-credentials',
                         gitUserName: 'Jenkins CI',
-                        gitUserEmail: 'user@gmail.com'
+                        gitUserEmail: 'adityar947@gmail.com'
                     )
                 }
             }
